@@ -15,13 +15,20 @@ open tictactoe.html
 
 This is a collection of self-contained browser games. Each game is a **single HTML file** with all styles, logic, and assets inline. No external dependencies, no network requests, no bundler.
 
-After every meaningful change: commit with a descriptive message and push to `origin/main`.
+## Git Workflow (Required)
+
+Commit and push to `origin/main` after every meaningful unit of work — a feature added, a bug fixed, a refactor completed. Never leave work uncommitted at the end of a task. This ensures the project can always be reverted to a known-good state.
 
 ```bash
 git add <file>
-git commit -m "description"
+git commit -m "short imperative summary of what changed and why"
 git push
 ```
+
+Commit message rules:
+- Use the imperative mood ("add", "fix", "remove", not "added" or "fixes")
+- First line ≤ 72 characters; add a blank line then details if needed
+- Reference what changed and why, not just what the code does
 
 ## shooter.html Architecture
 
